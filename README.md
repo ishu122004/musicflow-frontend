@@ -89,10 +89,112 @@ Authentication Response
       ↓
 React Frontend
 
-Author
+🔒 Security
+
+Passwords are never stored as plain text.
+
+Before storing a password, the backend hashes it using bcrypt.
+
+During login, bcrypt compares the entered password with the stored hash.
+
+const hashedPassword = await bcrypt.hash(password, 10);
+
+const passwordMatch = await bcrypt.compare(
+    password,
+    existingUser.password
+);
+
+📁 Project Structure
+project/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── backend/
+│   ├── index.js
+│   └── package.json
+│
+└── README.md
+
+🔌 API Endpoints
+Signup
+POST /signup
+
+Example request:
+
+{
+  "email": "user@example.com",
+  "password": "password123",
+  "gender": "Woman"
+}
+Login
+POST /login
+
+Example request:
+
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+🧪 Validation
+
+The application handles:
+
+Empty fields
+Invalid email formats
+Invalid passwords
+Password confirmation mismatch
+Duplicate email registration
+User not found
+Incorrect password
+Server errors
+
+💡 What I Learned
+
+Building this project helped me understand how a frontend and backend communicate in a real application.
+
+Key learning areas:
+
+React component architecture
+React Context API
+React Router navigation
+Controlled form inputs
+Axios API requests
+Express REST APIs
+HTTP status codes
+Backend validation
+Password hashing
+CORS
+Debugging client-server communication
+Environment-based deployment
+Vercel + Render integration
+🔮 Future Improvements
+MongoDB database integration
+JWT authentication
+Protected routes
+Persistent user sessions
+Forgot password functionality
+Email verification
+OAuth login
+User profile dashboard
+Music discovery features
+👩‍💻 Author
+
 Iswarya A
-this website is build with React.js,Node.js,Express.js.
-feedback and suggestions are always welcome
+
+B.E. Computer Science & Engineering
+
+Interested in Frontend & Full-Stack Development.
+
+⭐ If you find this project useful made by TailwindCSS,React.js,Node.js,Express.js
+
+Feel free to explore the repository and give it a ⭐.
 github link:https://github.com/ishu122004
 linked profile:https://www.linkedin.com/in/iswarya-a-036902356/
      
