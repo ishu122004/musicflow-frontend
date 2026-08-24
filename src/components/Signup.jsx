@@ -374,7 +374,7 @@ const Signup=()=>{
                         focus:border-white active:border-white focus:ring-1 active:ring-1 focus:ring-white active:ring-white transition duration-700" placeholder="name@example.com"/></div>
                         <button type="submit" className="bg-[#3BE477] w-full h-12 sm:h-14 mt-5 rounded-full text-black text-base font-bold hover:bg-[#3BE477] active:scale-[0.98] transition duration-700"><Link to="/signup/password">Next</Link></button>
                 </form>
-                <div className="flex items-center gap-4 my-8"><span className="">or</span></div>
+                <div className="flex items-center justify-center gap-4 my-8"><span >or</span></div>
                 <div className="space-y-3">
                     <button type="button" className="w-full h-12 rounded-full border border-[#727272] hover:border-white font-bold transition duration-200">Sign up with your phone number</button>
                     <button type="button" className="w-full h-12 rounded-full border border-[#727272] hover:border-white font-bold transition duration-200">Sign up with your google</button>
