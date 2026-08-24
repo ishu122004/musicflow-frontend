@@ -333,7 +333,7 @@
 
 import {Link,useNavigate} from "react-router-dom"
 import { useContext } from "react"
-import axios from "axios"
+
 import { Usercontext } from "../context/Provider"
 
 const Signup=()=>{

@@ -12,7 +12,7 @@ const [marketing,setmarketing]=useState(false)
 const [sharing,setsharing]=useState(false)
 const signup=async ()=>{
     try{
-        const response=await axios.post("http://localhost:3000/signup",{
+        const response=await axios.post("https://musicflow-backend-0cja.onrender.com/signup",{
     username:formdata.name,
     email:formdata.mail,
     password:formdata.password,
