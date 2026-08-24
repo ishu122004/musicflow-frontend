@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 import { useContext } from "react"
 
-import { Usercontext } from "../context/provider"
+import { Usercontext } from "../context/Provider"
 
 const Login=()=>{
 

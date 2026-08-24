@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState,useContext } from "react";
-import { Usercontext } from "../context/provider";
+import { Usercontext } from "../context/Provider";
 
 const Signupterms=()=>{
 const {formdata,setformdata}=useContext(Usercontext)

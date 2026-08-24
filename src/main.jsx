@@ -4,7 +4,7 @@ import App from "./App";
 import './index.css'
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Signup from "./components/Signup";
-import Provider from "./context/provider";
+import Provider from "./context/Provider";
 
 import Signuppassword from "./components/Signuppassword";
 
